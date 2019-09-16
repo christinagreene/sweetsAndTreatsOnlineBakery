@@ -1,0 +1,12 @@
+.shopCategory {
+   @include flexbox(row, wrap);
+}
+
+.shopItemContainer {
+   width: calc(25% - 16px);
+   margin: 25px 8px;
+   .shopItemImage img {
+      max-height: 132px;
+      object-fit: cover;
+   }
+}

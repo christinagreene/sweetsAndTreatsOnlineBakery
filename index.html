@@ -4,49 +4,54 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Sweet Treats Bakery</title>
-   <!-- favicon -->
+   <title>Sweet & Treats Online Bakery</title>
+   <link rel="icon" href="./assets/favicon.png">
    <script src="https://kit.fontawesome.com/eae878ee07.js"></script>
-   <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-   <!-- google fonts -->
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Yeseva+One&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
    <a href="#content" class="visuallyHidden">Skip to main content.</a>
    <header>
-      <nav class="mainMenu">
-         <ul class="siteNav">
-            <li>
-               <a href="#home" aria-label="Go to the home section.">Home</a>
-            </li>
-            <li>
-               <a href="#about" aria-label="Go to the about section.">About</a>
-            </li>
-            <li>
-               <a href="#shop" aria-label="Go to the online store.">Shop</a>
-            </li>
-            <li>
-               <a href="#recipes" aria-label="Go to the recipes section.">Recipes</a>
-            </li>
-            <li>
-               <a href="#contact" aria-label="Go to the contact section.">Contact</a>
-            </li>
-         </ul>
-         <ul class="shopperDetails">
-            <li>
-               <a href="" aria-label="Go to your account details."><i class="fas fa-user" aria-hidden="true"></i></a>
-            </li>
-            <li>
-               <a href="" aria-label="Go to your shopping cart."><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-            </li>
-         </ul>
-      </nav>
-      <h1>Sweets & Treats</h1>
+      <div class="mainMenu">
+         <nav class="wrapper">
+            <ul class="siteNav">
+               <li>
+                  <a href="#home" aria-label="Go to the home section.">Home</a>
+               </li>
+               <li>
+                  <a href="#about" aria-label="Go to the about section.">About</a>
+               </li>
+               <li>
+                  <a href="#shop" aria-label="Go to the online store.">Shop</a>
+               </li>
+               <li>
+                  <a href="#recipes" aria-label="Go to the recipes section.">Recipes</a>
+               </li>
+               <li>
+                  <a href="#contact" aria-label="Go to the contact section.">Contact</a>
+               </li>
+            </ul>
+            <ul class="shopperDetails">
+               <li>
+                  <a href="" aria-label="Go to your account details."><i class="fas fa-user" aria-hidden="true"></i></a>
+               </li>
+               <li>
+                  <a href="" aria-label="Go to your shopping cart."><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div class="title wrapper">
+         <h1>Sweets & <span>Treats</span></h1>
+         <h2>Online Bakery</h2>
+      </div>
    </header>
-   <main>
-      <section class="about" id="content">
+   <main id="content">
+      <section class="about wrapper" id="about">
          <h2>About Us</h2>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur tempora temporibus dolore molestias expedita accusamus quidem omnis? Quas, qui quasi placeat aliquid odio error vitae vel nesciunt voluptas est eligendi dicta iste, quisquam labore laudantium modi porro, possimus quaerat rem tempora libero officia perspiciatis? Nesciunt, impedit. Ducimus cumque numquam ullam?</p>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illo quibusdam molestiae, consequuntur, quisquam veniam nisi quam velit itaque asperiores expedita debitis praesentium nihil eius ad labore odio cupiditate totam similique aliquam omnis impedit dignissimos eveniet magnam! Doloremque a accusantium optio suscipit eum voluptatibus, harum dolor, fuga cupiditate distinctio architecto voluptatem veritatis labore vel earum ipsum aliquam cum minus enim repudiandae id dignissimos? Impedit non animi obcaecati commodi. Dolores, quod a mollitia labore veniam alias veritatis nesciunt quidem quae nemo iure voluptates inventore quas eius temporibus, deserunt voluptatum consequuntur esse soluta debitis quaerat! Aut ut maiores sequi, vitae eaque eum.</p>
       </section>
       <section class="gallery">
          <div class="photoGallery">
@@ -67,279 +72,298 @@
             </div>
          </div>
       </section>
-      <section class="shop">
+      <section class="shop wrapper" id="shop">
          <h2>Shop</h2>
-         <div class="shopBreads">
+         <div class="shopCategoryTitle">
             <h3>Breads & Buns</h3>
+         </div>
+         <div class="shopCategory">
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bread.jpg" alt="A loaf of sliced bread.">
-                  <div class="shopItemDescription">
-                     <h4>Multigrain Loaf</h4>
-                     <p>$6.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Multigrain Loaf</h4>
+                  <p>$6.00</p>
+                  <a href="#">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bread3.jpg" alt="A sliced baguette on a table.">
-                  <div class="shopItemDescription">
-                     <h4>French Baguette</h4>
-                     <p>$4.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>French Baguette</h4>
+                  <p>$4.00</p>
+                  <a href="#">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bread2.jpg" alt="A sourdough loaf of bread on a cutting board.">
-                  <div class="shopItemDescription">
-                     <h4>Sourdough Loaf</h4>
-                     <p>$6.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Sourdough Loaf</h4>
+                  <p>$6.00</p>
+                  <a href="#">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/croissant.jpg" alt="Croissants stacked on one another.">
-                  <div class="shopItemDescription">
-                     <h4>Croissant</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Croissant</h4>
+                  <p>$3.00</p>
+                  <a href="#">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cinnamonBuns.jpg" alt="A half dozen cinnomon buns with icing on top.">
-                  <div class="shopItemDescription">
-                     <h4>Cinnomon Bun</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Cinnomon Bun</h4>
+                  <p>$3.00</p>
+                  <a href="#">Add To Cart</a>
                </div>
             </div>
          </div>
-         <div class="shopCakes">
+         <!-- <div class="shopCategoryTitle">
             <h3>Cakes & Cupcakes</h3>
+         </div>
+         <div class="shopCategory">
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cake.jpg" alt="A chocolate cake on a cake stand.">
-                  <div class="shopItemDescription">
-                     <h4>10" Chocolate Cake</h4>
-                     <p>$50.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>10" Chocolate Cake</h4>
+                  <p>$50.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cake2.jpg" alt="Slices of vanilla cake on plates with vanilla and cherry icing.">
-                  <div class="shopItemDescription">
-                     <h4>10" Vanilla Cake</h4>
-                     <p>$50.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>10" Vanilla Cake</h4>
+                  <p>$50.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cheesecake.jpg" alt="Cheesecake with a slice cut out on a tablecloth next to purple flowers.">
-                  <div class="shopItemDescription">
-                     <h4>Cheesecake</h4>
-                     <p>$30.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Cheesecake</h4>
+                  <p>$30.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cupcakes.jpg" alt="A row of vanilla cupcakes with mint green icing and sprinkles on top.">
-                  <div class="shopItemDescription">
-                     <h4>Vanila Cupcake</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Vanila Cupcake</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cupcakes2.jpg" alt="A bunch of chocolate cupckes with white icing and bacon bits on top.">
-                  <div class="shopItemDescription">
-                     <h4>Maple Bacon Cupcake</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Maple Bacon Cupcake</h4>
+                  <p>$3.00</p>
                </div>
             </div>
          </div>
-         <div class="shopPies">
+         <div class="shopCategoryTitle">
             <h3>Pies & Pastries</h3>
+         </div>
+         <div class="shopCategory">
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/pie2.jpg" alt="An apple pie with a slice cut out on a round, black cutting board.">
-                  <div class="shopItemDescription">
-                     <h4>Classic Apple Pie</h4>
-                     <p>$30.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Classic Apple Pie</h4>
+                  <p>$30.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/pie.jpg" alt="A pumpkin pie with a slice cut out of it on a round, white tray.">
-                  <div class="shopItemDescription">
-                     <h4>Pumpkin Pie</h4>
-                     <p>$30.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Pumpkin Pie</h4>
+                  <p>$30.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/pie3.jpg" alt="Lime curd pie on a wooden table next to slices of lime and a cutting knife.">
-                  <div class="shopItemDescription">
-                     <h4>Lime Curd Pie</h4>
-                     <p>$30.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Lime Curd Pie</h4>
+                  <p>$30.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/tarts.jpg" alt="A few tarts with fresh orange and blackberries on top as garnish.">
-                  <div class="shopItemDescription">
-                     <h4>Mini Cheese Tart</h4>
-                     <p>$10.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Mini Cheese Tart</h4>
+                  <p>$10.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/tarts2.jpg" alt="">
-                  <div class="shopItemDescription">
-                     <h4>Apple Cheese Tart</h4>
-                     <p>$30.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Apple Cheese Tart</h4>
+                  <p>$30.00</p>
                </div>
             </div>
          </div>
-         <div class="shopBrownies">
+         <div class="shopCategoryTitle">
             <h3>Brownies & Bars</h3>
+         </div>
+         <div class="shopCategory">
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/brownies2.jpg" alt="A square of brownie on a piece of parchment paper.">
-                  <div class="shopItemDescription">
-                     <h4>Fudge Brownie</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Fudge Brownie</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/brownies.jpg" alt="A batch of brownies with walnuts on top cooling down in the pan on a cooling rack.">
-                  <div class="shopItemDescription">
-                     <h4>Nutty Brownie</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Nutty Brownie</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bars.jpg" alt="A stack of oat bars.">
-                  <div class="shopItemDescription">
-                     <h4>Oat Bar</h4>
-                     <p>$4.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Oat Bar</h4>
+                  <p>$4.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bars2.jpg" alt="A stack of matcha bars on a white plate next to matcha powder, white chocolate chips and a matcha whisk.">
-                  <div class="shopItemDescription">
-                     <h4>Matcha Bar</h4>
-                     <p>$5.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Matcha Bar</h4>
+                  <p>$5.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/bars3.jpg" alt="A bunch of lemon squares with raspberries and a piece of mint on top neatly laid out on a dessert tray.">
-                  <div class="shopItemDescription">
-                     <h4>Lemon Square Bites</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Lemon Square Bites</h4>
+                  <p>$3.00</p>
                </div>
             </div>
          </div>
-         <div class="shopMuffins">
+         <div class="shopCategoryTitle">
             <h3>Muffins & More</h3>
+         </div>
+         <div class="shopCategory">
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/muffins.jpg" alt="A stack of double chocolate chip muffins.">
-                  <div class="shopItemDescription">
-                     <h4>Double Chocolate Muffins</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Double Chocolate Muffins</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/donuts.jpg" alt="A dozen various donuts laid out on a white table.">
-                  <div class="shopItemDescription">
-                     <h4>Donuts</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Donuts</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cookies.jpg" alt="A bunch of chocolate chip cookies with nuts and lemon zest.">
-                  <div class="shopItemDescription">
-                     <h4>Chocolate Chip Cookie</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Chocolate Chip Cookie</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/cookies2.jpg" alt="Oatmeal and chocolate oatmeal cookies on a white table, some garnished with mint leaves.">
-                  <div class="shopItemDescription">
-                     <h4>Oatmeal Cookie</h4>
-                     <p>$3.00</p>
-                  </div>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>Oatmeal Cookie</h4>
+                  <p>$3.00</p>
                </div>
             </div>
             <div class="shopItemContainer">
                <div class="shopItemImage">
                   <img src="./assets/macarons.jpg" alt="Various colours of macarons laid out in a staggered pattern on white marble.">
-                  <div class="shopItemDescription">
-                     <h4>French Macaron</h4>
-                     <p>$3.00</p>
+               </div>
+               <div class="shopItemDescription">
+                  <h4>French Macaron</h4>
+                  <p>$3.00</p>
+               </div>
+            </div>
+         </div> -->
+      </section>
+      <section class="recipes" id="recipes">
+         <div class="wrapper">
+            <h2>Featured Recipes</h2>
+            <div class="recipesForFlex">
+               <div class="recipeContainer">
+                  <div class="recipeImage">
+                     <img src="./assets/cake2.jpg" alt="Slices of vanilla cake on plates with vanilla and cherry icing.">
                   </div>
+                  <h4>Vanilla Cake</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
+                  <a href="#">View Recipe</a>
+               </div>
+               <div class="recipeContainer">
+                  <div class="recipeImage">
+                     <img src="./assets/tarts.jpg" alt="A few tarts with fresh orange and blackberries on top as garnish.">
+                  </div>
+                  <h4>Mini Cheese Tarts</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
+                  <a href="#">View Recipe</a>
+               </div>
+               <div class="recipeContainer">
+                  <div class="recipeImage">
+                     <img src="./assets/macarons.jpg" alt="Various colours of macarons laid out in a staggered pattern on white marble.">
+                  </div>
+                  <h4>French Macarons</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
+                  <a href="#">View Recipe</a>
                </div>
             </div>
          </div>
       </section>
-      <section class="recipes">
-         <h2>Featured Recipes</h2>
-         <div class="recipeContainer">
-            <div class="recipeImage">
-               <img src="./assets/cake2.jpg" alt="Slices of vanilla cake on plates with vanilla and cherry icing.">
-            </div>
-            <h3>Vanilla Cake</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
-            <a href="#">View Recipe</a>
-         </div>
-         <div class="recipeContainer">
-            <div class="recipeImage">
-               <img src="./assets/tarts.jpg" alt="A few tarts with fresh orange and blackberries on top as garnish.">
-            </div>
-            <h3>Mini Cheese Tarts</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
-            <a href="#">View Recipe</a>
-         </div>
-         <div class="recipeContainer">
-            <div class="recipeImage">
-               <img src="./assets/macarons.jpg" alt="Various colours of macarons laid out in a staggered pattern on white marble.">
-            </div>
-            <h3>French Macarons</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea!</p>
-            <a href="#">View Recipe</a>
-         </div>
-      </section>
    </main>
    <footer>
-      <div class="contact">
+      <div class="contact wrapper" id="contact">
          <nav class="contactMenu">
             <ul>
                <li>
@@ -365,6 +389,13 @@
                </li>
             </ul>
          </nav>
+         <div class="contactInformation">
+            <p><a href="mailto:hello@sweetsandtreats.com">hello@sweetsandtreats.com</a></p>
+            <p>416-555-5555</p>
+            <p>15 Yonge St</p>
+            <p>Toronto, ON</p>
+            <p>M1M 1M1</p>
+         </div>
          <nav class="contactSocial">
             <ul>
                <li>
@@ -390,7 +421,8 @@
       </div>
    </footer>
 
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    <script src="./js/scripts.js"></script>
-   
+
 </body>
 </html>

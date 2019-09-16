@@ -1,0 +1,94 @@
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 1.8rem;
+   font-family: $bodyFont;
+   letter-spacing: 1.2px;
+   color: $black;
+   background: $white;
+}
+
+.wrapper {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+   // max-width: 300px;
+   width: 100%;
+   display: block;
+   overflow: hidden;
+}
+
+ul {
+   margin: 0;
+   padding-left: 0;
+   li {
+      list-style: none;
+   }
+}
+
+a {
+   text-decoration: none;
+   color: $black;
+}
+
+h1, h2, h3, .siteNav a {
+   font-family: $headingFont;
+}
+
+h1, h2, .siteNav a {
+   text-transform: lowercase;
+}
+
+h2 {
+   margin-top: 0;
+   font-size: 3.3rem;
+}
+
+h3 {
+   font-size: 2.4rem;
+   background: $peach;
+   text-align: center;
+   padding: 15px 0;
+}
+
+.about,
+.shop,
+.recipes {
+   padding: 75px 0;
+}
+
+.shopItemDescription,
+.recipeContainer {
+   text-align: center;
+   h4 {
+      font-size: 2rem;
+      margin-bottom: 0;
+   }
+   p {
+      padding-bottom: 20px;
+   }
+}
+
+.shop a,
+.recipes a {
+   background: $blue;
+   border: 2px solid $blue;
+   border-radius: 5px;
+   padding: 10px 20px;
+   &:hover {
+      background: $peach;
+      border: 2px solid $peach;
+   }
+   &:active {
+      border: 2px dotted $blue;
+   }
+   &:focus {
+      border: 2px dashed $grey;
+   }
+}

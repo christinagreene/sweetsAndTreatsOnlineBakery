@@ -1,6 +1,10 @@
 @import './setup';
+@import './variables';
+@import './mixins';
 @import './baseStyles';
-
-img {
-   max-width: 300px;
-}
+@import './header';
+@import './about';
+@import './gallery';
+@import './shop';
+@import './recipes';
+@import './footer';

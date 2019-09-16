@@ -179,7 +179,316 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.2px;
+  color: #222;
+  background: #F4F0E5;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 img {
-  max-width: 300px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1, h2, h3, .siteNav a {
+  font-family: "Yeseva One", cursive;
+}
+
+h1, h2, .siteNav a {
+  text-transform: lowercase;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3.3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  background: #EFB0A1;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.about,
+.shop,
+.recipes {
+  padding: 75px 0;
+}
+
+.shopItemDescription,
+.recipeContainer {
+  text-align: center;
+}
+
+.shopItemDescription h4,
+.recipeContainer h4 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.shopItemDescription p,
+.recipeContainer p {
+  padding-bottom: 20px;
+}
+
+.shop a,
+.recipes a {
+  background: #A8DCD1;
+  border: 2px solid #A8DCD1;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.shop a:hover,
+.recipes a:hover {
+  background: #EFB0A1;
+  border: 2px solid #EFB0A1;
+}
+
+.shop a:active,
+.recipes a:active {
+  border: 2px dotted #A8DCD1;
+}
+
+.shop a:focus,
+.recipes a:focus {
+  border: 2px dashed #A29D9C;
+}
+
+header {
+  background: url("../../assets/headerBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainMenu {
+  background: #F4F0E5;
+  padding: 15px 0;
+}
+
+.mainMenu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainMenu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.mainMenu nav ul a {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.mainMenu nav ul a:hover {
+  border-bottom: 3px solid #EFB0A1;
+}
+
+.mainMenu nav ul a:active {
+  border: 1px dotted #EFB0A1;
+}
+
+.mainMenu nav ul a:focus {
+  color: #EFB0A1;
+}
+
+.siteNav li {
+  margin-right: 10px;
+}
+
+.siteNav li a {
+  padding: 10px 20px;
+}
+
+.siteNav li a:first-of-type {
+  margin-left: -20px;
+}
+
+.shopperDetails li {
+  margin-left: 15px;
+}
+
+.shopperDetails li a {
+  padding: 10px;
+}
+
+.shopperDetails li a:last-of-type {
+  margin-right: -10px;
+}
+
+.title {
+  color: #F4F0E5;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.title h1 {
+  font-size: 11rem;
+  margin-bottom: 25px;
+}
+
+.title h1 span {
+  display: block;
+}
+
+.title h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.about p {
+  line-height: 1.4;
+}
+
+.galleryCell {
+  width: 700px;
+  height: 450px;
+}
+
+.shopCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.shopItemContainer {
+  width: calc(25% - 16px);
+  margin: 25px 8px;
+}
+
+.shopItemContainer .shopItemImage img {
+  max-height: 132px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recipes {
+  background: #A29D9C;
+}
+
+.recipes .recipesForFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.recipes .recipesForFlex .recipeContainer {
+  width: calc(33% - 20px);
+  margin: 10px;
+}
+
+.recipes .recipesForFlex img {
+  max-height: 218px;
+}
+
+footer {
+  background: #222;
+}
+
+footer a,
+footer p {
+  color: #F4F0E5;
+}
+
+footer .contactSocial,
+footer p {
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer a:hover {
+  color: #A8DCD1;
+}
+
+footer a:active {
+  color: #EFB0A1;
+}
+
+footer a:focus {
+  border: 1px dotted #EFB0A1;
+}
+
+footer p {
+  margin: 0;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.contactMenu li {
+  padding: 10px 0;
+}
+
+.contactSocial li {
+  padding: 19px 0;
+  font-size: 2.2rem;
 }
 /*# sourceMappingURL=style.css.map */

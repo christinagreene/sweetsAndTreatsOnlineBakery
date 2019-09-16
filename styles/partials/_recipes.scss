@@ -1,0 +1,13 @@
+.recipes {
+   background: $grey;
+   .recipesForFlex {
+      @include flexbox(row, wrap);
+      .recipeContainer {
+         width: calc(33% - 20px);
+         margin: 10px;
+      }
+      img {
+         max-height: 218px;
+      }
+   }
+}
