@@ -190,6 +190,7 @@ body {
   letter-spacing: 1.2px;
   color: #222;
   background: #F4F0E5;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -266,6 +267,8 @@ h3 {
   border: 2px solid #A8DCD1;
   border-radius: 5px;
   padding: 10px 20px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .shop a:hover,
@@ -290,12 +293,12 @@ header {
   height: 100vh;
 }
 
-.mainMenu {
+.mainMenuBanner {
   background: #F4F0E5;
   padding: 15px 0;
 }
 
-.mainMenu nav {
+.mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,9 +309,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.mainMenu nav ul {
+.mainMenu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,20 +324,20 @@ header {
           flex-flow: row wrap;
 }
 
-.mainMenu nav ul a {
+.mainMenu ul a {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-.mainMenu nav ul a:hover {
+.mainMenu ul a:hover {
   border-bottom: 3px solid #EFB0A1;
 }
 
-.mainMenu nav ul a:active {
+.mainMenu ul a:active {
   border: 1px dotted #EFB0A1;
 }
 
-.mainMenu nav ul a:focus {
+.mainMenu ul a:focus {
   color: #EFB0A1;
 }
 
@@ -347,16 +353,32 @@ header {
   margin-left: -20px;
 }
 
-.shopperDetails li {
-  margin-left: 15px;
+.cartInfo {
+  border: 2px solid #222;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.shopperDetails li a {
-  padding: 10px;
+.cartInfo a {
+  font-family: "Yeseva One", cursive;
 }
 
-.shopperDetails li a:last-of-type {
-  margin-right: -10px;
+.cartInfo a i {
+  padding-right: 15px;
+}
+
+.cartInfo:hover {
+  background: #EFB0A1;
+}
+
+.cartInfo:active {
+  border: 2px dotted #A29D9C;
+}
+
+.cartInfo:focus {
+  border: 2px dashed #222;
 }
 
 .title {
@@ -377,6 +399,103 @@ header {
 .title h2 {
   font-size: 3.5rem;
   margin: 0;
+}
+
+.cart {
+  font-family: "Yeseva One", cursive;
+  background: #F4F0E5;
+  position: absolute;
+  top: 65px;
+  right: -465px;
+  padding: 40px 60px 80px 60px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.cart .cartItemContainer,
+.cart .cartTotalContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart .cartItemContainer {
+  padding: 0 20px;
+}
+
+.cart .cartItemTitle {
+  font-size: 2.1rem;
+}
+
+.cart .cartItemPriceContainer {
+  font-size: 1.6rem;
+}
+
+.cart .removeFromCart i {
+  font-size: 3rem;
+  color: #EFB0A1;
+}
+
+.cart .removeFromCart i:hover {
+  color: #A8DCD1;
+}
+
+.cart .removeFromCart i:active {
+  color: #A29D9C;
+}
+
+.cart .removeFromCart i:focus {
+  border: 1px dotted #A29D9C;
+}
+
+.cart .cartTotalContainer,
+.cart .cartButtonsContainer {
+  font-size: 2.3rem;
+}
+
+.cart .cartTotalContainer {
+  padding: 25px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cart .cartButton {
+  border: 2px solid #222;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.cart .cartButton:hover {
+  background: #EFB0A1;
+}
+
+.cart .cartButton:active {
+  border: 2px dotted #A29D9C;
+}
+
+.cart .cartButton:focus {
+  border: 2px dashed #222;
+}
+
+.showCart {
+  right: 0;
+}
+
+.cartInfoOpen {
+  background: #EFB0A1;
 }
 
 .about p {
@@ -449,6 +568,8 @@ footer p {
 
 footer a {
   padding: 10px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 footer a:hover {

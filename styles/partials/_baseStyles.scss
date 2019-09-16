@@ -9,6 +9,7 @@ body {
    letter-spacing: 1.2px;
    color: $black;
    background: $white;
+   overflow-x: hidden;
 }
 
 .wrapper {
@@ -18,7 +19,6 @@ body {
 
 img {
    max-width: 100%;
-   // max-width: 300px;
    width: 100%;
    display: block;
    overflow: hidden;
@@ -81,6 +81,7 @@ h3 {
    border: 2px solid $blue;
    border-radius: 5px;
    padding: 10px 20px;
+   transition: .2s ease-in-out;
    &:hover {
       background: $peach;
       border: 2px solid $peach;

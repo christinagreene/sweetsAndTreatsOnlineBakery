@@ -14,38 +14,49 @@
 <body>
    <a href="#content" class="visuallyHidden">Skip to main content.</a>
    <header>
-      <div class="mainMenu">
-         <nav class="wrapper">
-            <ul class="siteNav">
-               <li>
-                  <a href="#home" aria-label="Go to the home section.">Home</a>
-               </li>
-               <li>
-                  <a href="#about" aria-label="Go to the about section.">About</a>
-               </li>
-               <li>
-                  <a href="#shop" aria-label="Go to the online store.">Shop</a>
-               </li>
-               <li>
-                  <a href="#recipes" aria-label="Go to the recipes section.">Recipes</a>
-               </li>
-               <li>
-                  <a href="#contact" aria-label="Go to the contact section.">Contact</a>
-               </li>
-            </ul>
-            <ul class="shopperDetails">
-               <li>
-                  <a href="" aria-label="Go to your account details."><i class="fas fa-user" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="" aria-label="Go to your shopping cart."><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-               </li>
-            </ul>
-         </nav>
+      <div class="mainMenuBanner">
+         <div class="mainMenu wrapper">
+            <nav>
+               <ul class="siteNav">
+                  <li>
+                     <a href="#home" aria-label="Go to the home section.">Home</a>
+                  </li>
+                  <li>
+                     <a href="#about" aria-label="Go to the about section.">About</a>
+                  </li>
+                  <li>
+                     <a href="#shop" aria-label="Go to the online store.">Shop</a>
+                  </li>
+                  <li>
+                     <a href="#recipes" aria-label="Go to the recipes section.">Recipes</a>
+                  </li>
+                  <li>
+                     <a href="#contact" aria-label="Go to the contact section.">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="cartInfo" id="cartInfo">
+               <a href="#" aria-label="Go to your shopping cart."><i class="fas fa-shopping-cart"></i><span id="itemCount">0</span> - $<span class="itemTotal">0.00</span></a>
+            </div>
+         </div>
       </div>
       <div class="title wrapper">
          <h1>Sweets & <span>Treats</span></h1>
          <h2>Online Bakery</h2>
+      </div>   
+      <!-- Shopping Cart -->
+      <div class="cart" id="cart">
+         <!-- Cart Item Dynamanically Added-->
+         <!-- Cart Total -->
+         <div class="cartTotalContainer">
+            <p>Total</p>
+            <p>$ <span id="cartTotal">0.00</span></p>
+         </div>
+         <!-- Cart Buttons -->
+         <div class="cartButtonsContainer">
+            <a href="#" id="clearCart" class="cartButton">Clear Cart</a>
+            <a href="#" class="cartButton">Checkout</a>
+         </div>
       </div>
    </header>
    <main id="content">
@@ -85,7 +96,7 @@
                <div class="shopItemDescription">
                   <h4>Multigrain Loaf</h4>
                   <p>$6.00</p>
-                  <a href="#">Add To Cart</a>
+                  <a href="#" class="addToCart">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
@@ -95,7 +106,7 @@
                <div class="shopItemDescription">
                   <h4>French Baguette</h4>
                   <p>$4.00</p>
-                  <a href="#">Add To Cart</a>
+                  <a href="#" class="addToCart">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
@@ -105,7 +116,7 @@
                <div class="shopItemDescription">
                   <h4>Sourdough Loaf</h4>
                   <p>$6.00</p>
-                  <a href="#">Add To Cart</a>
+                  <a href="#" class="addToCart">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
@@ -115,7 +126,7 @@
                <div class="shopItemDescription">
                   <h4>Croissant</h4>
                   <p>$3.00</p>
-                  <a href="#">Add To Cart</a>
+                  <a href="#" class="addToCart">Add To Cart</a>
                </div>
             </div>
             <div class="shopItemContainer">
@@ -125,7 +136,7 @@
                <div class="shopItemDescription">
                   <h4>Cinnomon Bun</h4>
                   <p>$3.00</p>
-                  <a href="#">Add To Cart</a>
+                  <a href="#" class="addToCart">Add To Cart</a>
                </div>
             </div>
          </div>
