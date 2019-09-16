@@ -45,13 +45,15 @@ var flkty = new Flickity( carousel, {
          const cartItem = document.createElement('div');
          cartItem.classList.add('cartItemContainer');
 
-         cartItem.innerHTML = `<div class="cartItemText">
+         cartItem.innerHTML = `
+            <div class="cartItemText">
                <p class="cartItemTitle" id="cartItemTitle">${item.name}</p>
                <p class="cartItemPrice">$<span id="cartItemPrice">${item.price}</span></p>
             </div>
             <div class="removeFromCart">
-               <a href="#" id="cartItemRemove" class="cartItemRemove"><i class="fas fa-trash-alt"></i></a>
-            </div>`;
+               <a href="#" id="removeCartItem" class="removeCartItem" onClick="removeItem"><i class="fas fa-trash-alt"></i></a>
+            </div>
+         `;
 
          // select cart
          const cart = document.getElementById('cart');
@@ -84,10 +86,5 @@ var flkty = new Flickity( carousel, {
       document.getElementById('cartTotal').textContent = dollarAmount;
       document.querySelector('.itemTotal').textContent = dollarAmount;
       document.getElementById('itemCount').textContent = total.length;
-   }
-})();
-
-// delete items from cart
-(function() {
-   
+   };
 })();
