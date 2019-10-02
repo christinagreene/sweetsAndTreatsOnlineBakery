@@ -515,6 +515,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  padding: 5px 0 25px 0;
 }
 
 .shopItemContainer {
@@ -548,7 +549,7 @@ header {
 }
 
 .recipes .recipesForFlex img {
-  max-height: 218px;
+  max-height: 193px;
 }
 
 footer {

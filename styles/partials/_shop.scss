@@ -1,5 +1,6 @@
 .shopCategory {
    @include flexbox(row, wrap);
+   padding: 5px 0 25px 0;
 }
 
 .shopItemContainer {
