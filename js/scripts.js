@@ -19,11 +19,13 @@ var flkty = new Flickity( carousel, {
       cart.classList.toggle('showCart');
       cartInfo.classList.toggle('cartInfoOpen');
    });
-})();
+})(); // end of show cart contents
 
 (function(){
-   // 
+   const cart = document.getElementById('cart');
    const addItem = document.querySelectorAll('.addToCart');
+   const deleteItem = document.getElementById('removeCartItem');
+   const deleteCart = document.getElementById('clearCart');
    
    // Add items from the shop to the cart
    addItem.forEach(function(button) {
@@ -38,7 +40,7 @@ var flkty = new Flickity( carousel, {
 
          item.name = name;
 
-         // locating price of ea.ch item in shop to include in description and totals of items in cart
+         // locating price of each item in shop to include in description and totals of items in cart
          let price = e.target.previousElementSibling.textContent;
 
          let finalPrice = price.slice(1);
@@ -55,12 +57,11 @@ var flkty = new Flickity( carousel, {
                <p class="cartItemPrice">$<span id="cartItemPrice">${item.price}</span></p>
             </div>
             <div class="removeFromCart">
-               <a href="#" id="removeCartItem" class="removeCartItem" onClick="removeItem"><i class="fas fa-trash-alt"></i></a>
+               <a href="#" id="removeCartItem" class="removeCartItem"><i class="fas fa-trash-alt"></i></a>
             </div>
          `;
 
          // select cart
-         const cart = document.getElementById('cart');
          const itemPrice = document.querySelector('.cartTotalContainer');
 
          // items that get added to the cart to be located before the cart total in the DOM
@@ -70,10 +71,22 @@ var flkty = new Flickity( carousel, {
          alert('You have added this item to the cart.');
 
          showTotals();
+
       })
    });
 
-   // to show the total in the nav bar and in the cart
+   // REMOVE ITEM
+   // remove selected .cartItemContainer on click of trash can called removeCartItem = removeItem()
+
+   
+
+
+   // CLEAR CART
+   // run removeAllItems() to remove all .cartItemContainer
+
+
+
+   // function to show the total in the nav bar and in the cart
    function showTotals() {
       const total = [];
       const items = document.querySelectorAll('.cartItemPrice');
@@ -84,7 +97,6 @@ var flkty = new Flickity( carousel, {
 
       const totalCost = total.reduce(function(total, item) {
          total += item;
-         
          return total;
       }, 0)
 
@@ -93,23 +105,6 @@ var flkty = new Flickity( carousel, {
       document.getElementById('cartTotal').textContent = dollarAmount;
       document.querySelector('.itemTotal').textContent = dollarAmount;
       document.getElementById('itemCount').textContent = total.length;
-   };
+   }; // end of showTotals function
 
-   
-   // function deleteItem() {
-   //    const clearItem = document.getElementById('removeCartItem');
-      
-   //    clearItem.forEach(function(clearButton) {
-   //       clearButton.addEventListener('click', function(event) {
-            
-   //          e.preventDefault();
-            
-   //       })
-   //    })
-   // }
-   
-   // function deleteCart() {
-   //    const clearCart = document.getElementById('clearCart');
-
-   // }
-})();
+})(); // end of add and delete cart functions
