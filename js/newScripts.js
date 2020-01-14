@@ -52,13 +52,14 @@ function ready() {
    };
 };
 
-// Delete individual items from cart
+// Delete individual items from cart & updates total
 function removeCartItem(e) {
    var removeButton = e.target;
    removeButton.parentElement.parentElement.parentElement.remove();
    updateCartTotal();
 }
 
+// Prevents quantity for item in cart from going below 1 & updates total on change
 function quantityChanged(e) {
    var input = e.target;
    if (isNaN(input.value) || input.value <= 0) {
@@ -67,6 +68,7 @@ function quantityChanged(e) {
    updateCartTotal();
 }
 
+// Adds item to cart & updates total
 function addItemClicked(e) {
    e.preventDefault();
    var addButton = e.target;
@@ -121,15 +123,13 @@ function updateCartTotal() {
 
    let total = 0;
 
-   let totalQuantity = 0;
-
    for (let i = 0; i < cartItemContainers.length; i++) {
       var cartItemInfo = cartItemContainers[i];
       var priceElement = cartItemInfo.getElementsByClassName('cartItemPrice')[0];
       var quantityElement = cartItemInfo.getElementsByClassName('itemQuantity')[0];
       
       var price = priceElement.innerText;
-      var quantity = quantityElement.value;
+      var quantity = parseInt(quantityElement.value);
       total = total + (price * quantity);
       var totalDollarAmount = total.toFixed(2);
    }
@@ -138,8 +138,17 @@ function updateCartTotal() {
 
    document.getElementsByClassName('itemTotal')[0].innerText = totalDollarAmount;
 
-   //display item count in nav bar
+   itemCounter(quantity);
+}
 
+function itemCounter(quantity) {
+
+   let totalQuantity = [];
+
+   let itemCountDiv = document.getElementsByClassName('itemCount')[0].innerText;
+   itemCountDiv = quantity;
+
+   console.log(itemCountDiv)
 }
 
 
