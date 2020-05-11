@@ -83,6 +83,7 @@ function addItemClicked(e) {
 }
 
 function addItemToCart(itemName, itemPrice) {
+
    var cartItemContainerDiv = document.createElement('div');
    cartItemContainerDiv.classList.add('cartItemContainer');
    var cartItemsDiv = document.getElementsByClassName('cartItems')[0];
@@ -132,25 +133,42 @@ function updateCartTotal() {
       var quantity = parseInt(quantityElement.value);
       total = total + (price * quantity);
       var totalDollarAmount = total.toFixed(2);
+
+      const itemCount = [];
+      itemCount.push(quantity);
+      //figure out how to separate the quantity numbers so that they can be added up
+
+      console.log(itemCount);
    }
 
    document.getElementsByClassName('cartTotal')[0].innerText = totalDollarAmount;
 
    document.getElementsByClassName('itemTotal')[0].innerText = totalDollarAmount;
 
-   itemCounter(quantity);
+   // // create empty array
+   // const itemCount = [];
+   // // as each item is added to the cart, add it to the array
+   // itemCount.push(quantityElement);
+   // // if the quantity is increased, add each new item to the array
+   // // quantity count will be array.length
+   // let totalItemCount = itemCount.length;
+   // console.log('itemCount', itemCount);
+   // console.log('quantity', totalItemCount);
 }
 
-function itemCounter(quantity) {
 
-   let totalQuantity = [];
 
-   let itemCountDiv = document.getElementsByClassName('itemCount')[0].innerText;
-   itemCountDiv = quantity;
 
-   console.log(itemCountDiv)
-}
+// Updates quantity icon in navigation bar
+// function itemCounter(e) {
+//    const totalQuantity = [];
 
+//    // for (let i = 0; i)
+//       const itemCount = document.getElementsByClassName('itemQuantity')[0].value;
+//    // let itemCountDiv = input;
+
+//    console.log(itemCount)
+// }
 
 
 // Delete ALL items from cart
