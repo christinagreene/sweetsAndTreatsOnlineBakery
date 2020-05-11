@@ -288,8 +288,7 @@ h3 {
 }
 
 header {
-  background-image: url("../../assets/headerBackground.jpg");
-  background-repeat: no-repeat;
+  background: url("https://christinagreene.github.io/sweetsAndTreatsOnlineBakery/assets/headerBackground.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
