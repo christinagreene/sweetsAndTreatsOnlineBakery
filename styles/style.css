@@ -264,6 +264,8 @@ h3 {
 .shop a,
 .recipes a {
   background: #A8DCD1;
+  font-weight: 700;
+  text-transform: uppercase;
   border: 2px solid #A8DCD1;
   border-radius: 5px;
   padding: 10px 20px;
@@ -397,7 +399,7 @@ header {
 }
 
 .title h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -406,8 +408,8 @@ header {
   background: #F4F0E5;
   position: absolute;
   top: 65px;
-  right: -465px;
-  padding: 40px 60px 80px 60px;
+  right: -580px;
+  padding: 40px 100px 80px 100px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -472,6 +474,7 @@ header {
 .cart .cartTotalContainer,
 .cart .cartButtonsContainer {
   font-size: 2.3rem;
+  text-align: center;
 }
 
 .cart .cartTotalContainer {
@@ -598,6 +601,10 @@ footer a:focus {
 
 footer p {
   margin: 0;
+}
+
+footer .copyright p {
+  padding-bottom: 35px;
 }
 
 .contact {

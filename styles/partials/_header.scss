@@ -8,6 +8,10 @@ header {
 .mainMenuBanner {
    background: $white;
    padding: 15px 0;
+   // position: fixed;
+   // top: 0;
+   // width: 100%;
+   // z-index: 100;
 }
 
 .mainMenu {
@@ -67,6 +71,7 @@ header {
 .title {
    color: $white;
    transform: translateY(10%);
+   // padding-top: 55px;
    h1 {
       font-size: 11rem;
       margin-bottom: 25px;
@@ -75,7 +80,7 @@ header {
       }
    }
    h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin: 0;
    }
 }
@@ -86,8 +91,8 @@ header {
    background: $white;
    position: absolute;
    top: 65px;
-   right: -465px;
-   padding: 40px 60px 80px 60px;
+   right: -580px;
+   padding: 40px 100px 80px 100px;
    transition: all .3s ease-in-out;
    .cartItemContainer,
    .cartTotalContainer {
@@ -130,6 +135,7 @@ header {
    .cartTotalContainer,
    .cartButtonsContainer {
       font-size: 2.3rem;
+      text-align: center;
    }
    .cartTotalContainer {
       padding: 25px 0;
