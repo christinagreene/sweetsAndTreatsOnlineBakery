@@ -790,7 +790,7 @@ footer .copyright p {
             flex-flow: row nowrap;
   }
   .contact .contactSocial a {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -801,6 +801,12 @@ footer .copyright p {
   }
   .title h1 {
     font-size: 7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .cart {
+    padding: 40px 50px 80px 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
