@@ -1,0 +1,153 @@
+/////////////////////////////////////////////////////////
+@media (max-width: 1050px) {
+
+   .mainMenu {
+      padding: 0 40px;
+   }
+
+   .title {
+      padding-left: 40px;
+   }
+
+   .about, .shop, .recipes {
+      padding: 75px;
+   }
+}
+
+
+/////////////////////////////////////////////////////////
+@media (max-width: 900px) {
+   header {
+      background-position-x: 70%;
+   }
+
+   .shopItemContainer {
+      width: calc(50% - 16px);
+   }
+
+   .recipes {
+      .recipesForFlex {
+         justify-content: space-around;
+         .recipeContainer {
+            width: 45%;
+            margin: 40px 0;
+         }
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////
+@media (max-width: 675px) {
+   body {
+      font-size: 2rem;
+   }
+
+   // Hamburger Menu ////
+   .menuToggle {
+      display: block;
+   }
+
+   .menuToggle.openMenu {
+      span:nth-child(1) {
+         transform: translateY(13px) rotate(45deg);
+      }
+      span:nth-child(2) {
+         opacity: 0;
+      }
+      span:nth-child(3) {
+         transform: translateY(-13px) rotate(315deg);
+      }
+   }
+
+   .mainMenu ul {
+      background: $white;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: -270px;
+      text-align: center;
+      padding: 75px 60px 30px 60px;
+      z-index: 10;
+      transition: .5s ease-in;
+   }
+
+   .siteNav.active {
+      left:0;
+   }
+
+   .siteNav li {
+      margin: 0;
+      padding: 20px 10px;
+
+      a:first-of-type {
+         margin-left: 0;
+      }
+   } ////
+
+   .title {
+      transform: translateY(25%);
+      h1 {
+         font-size: 14vw;
+      }
+   }
+}
+/////////////////////////////////////////////////////////
+@media (max-width: 600px) {
+   .cart {
+      width: 100%;
+   }
+
+   .shopItemContainer {
+      width: 100%;
+      margin: 30px 0;
+   }
+
+   .recipes {
+      .recipesForFlex {
+         .recipeContainer {
+            width: 100%;
+         }
+      }
+   }
+
+   .contact {
+      flex-direction: column;
+      a {
+         padding: 10px 30px;
+      }
+      .contactMenu {
+         padding: 10px 30px 40px 30px;
+         ul {
+            @include flexbox(row, wrap);
+            justify-content: center;
+         }
+         li {
+            padding:20px 0;
+         }
+      }
+
+      .contactInformation p {
+         padding: 5px;
+      }
+
+      .contactSocial {
+         padding: 50px 0 0 0;
+         ul {
+            @include flexbox(row, nowrap);
+         }
+         a {
+            font-size: 3.5rem;
+         }
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////
+@media (max-width: 525px) {
+   .title {
+      transform: translateY(50%);
+      h1 {
+         font-size: 7rem;
+      }
+   }
+}

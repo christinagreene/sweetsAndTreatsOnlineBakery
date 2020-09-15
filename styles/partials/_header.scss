@@ -4,16 +4,31 @@ header {
    height: 100vh;
 }
 
-// Navigation Menu
+// Hamburger Menu
 .mainMenuBanner {
    background: $white;
    padding: 15px 0;
-   // position: fixed;
-   // top: 0;
-   // width: 100%;
-   // z-index: 100;
 }
 
+.menuToggle {
+   display: none;
+   position: absolute;
+   top: 18px;
+   left: 25px;
+   z-index: 11;
+   span {
+      background: #000;
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 3px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: .5s ease-in-out;
+   }
+}
+
+// Navigation Menu
 .mainMenu {
    @include flexbox(row, wrap);
    justify-content: space-between;
@@ -100,7 +115,6 @@ header {
       align-items: center;
    }
    .cartItemContainer {
-      padding: 0 20px;
       .cartItemText {
          width: 65%;
       }
@@ -140,11 +154,15 @@ header {
    .cartTotalContainer {
       padding: 25px 0;
       justify-content: space-around;
+      p {
+         margin: 0 20px;
+      }
    }
    .cartButton {
       border: 2px solid $black;
       border-radius: 5px;
       padding: 10px;
+      margin: 0 100px;
       text-transform: uppercase;
       transition: .2s ease-in-out;
       &:hover {

@@ -300,6 +300,26 @@ header {
   padding: 15px 0;
 }
 
+.menuToggle {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  z-index: 11;
+}
+
+.menuToggle span {
+  background: #000;
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
 .mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,10 +448,6 @@ header {
           align-items: center;
 }
 
-.cart .cartItemContainer {
-  padding: 0 20px;
-}
-
 .cart .cartItemContainer .cartItemText {
   width: 65%;
 }
@@ -483,10 +499,15 @@ header {
       justify-content: space-around;
 }
 
+.cart .cartTotalContainer p {
+  margin: 0 20px;
+}
+
 .cart .cartButton {
   border: 2px solid #222;
   border-radius: 5px;
   padding: 10px;
+  margin: 0 100px;
   text-transform: uppercase;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -564,6 +585,8 @@ header {
 
 .recipes .recipesForFlex img {
   max-height: 193px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -630,5 +653,154 @@ footer .copyright p {
 .contactSocial li {
   padding: 19px 0;
   font-size: 2.2rem;
+}
+
+@media (max-width: 1050px) {
+  .mainMenu {
+    padding: 0 40px;
+  }
+  .title {
+    padding-left: 40px;
+  }
+  .about, .shop, .recipes {
+    padding: 75px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    background-position-x: 70%;
+  }
+  .shopItemContainer {
+    width: calc(50% - 16px);
+  }
+  .recipes .recipesForFlex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .recipes .recipesForFlex .recipeContainer {
+    width: 45%;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 675px) {
+  body {
+    font-size: 2rem;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .menuToggle.openMenu span:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+            transform: translateY(13px) rotate(45deg);
+  }
+  .menuToggle.openMenu span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuToggle.openMenu span:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(315deg);
+            transform: translateY(-13px) rotate(315deg);
+  }
+  .mainMenu ul {
+    background: #F4F0E5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -270px;
+    text-align: center;
+    padding: 75px 60px 30px 60px;
+    z-index: 10;
+    -webkit-transition: .5s ease-in;
+    transition: .5s ease-in;
+  }
+  .siteNav.active {
+    left: 0;
+  }
+  .siteNav li {
+    margin: 0;
+    padding: 20px 10px;
+  }
+  .siteNav li a:first-of-type {
+    margin-left: 0;
+  }
+  .title {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  .title h1 {
+    font-size: 14vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart {
+    width: 100%;
+  }
+  .shopItemContainer {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .recipes .recipesForFlex .recipeContainer {
+    width: 100%;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact a {
+    padding: 10px 30px;
+  }
+  .contact .contactMenu {
+    padding: 10px 30px 40px 30px;
+  }
+  .contact .contactMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contactMenu li {
+    padding: 20px 0;
+  }
+  .contact .contactInformation p {
+    padding: 5px;
+  }
+  .contact .contactSocial {
+    padding: 50px 0 0 0;
+  }
+  .contact .contactSocial ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .contact .contactSocial a {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .title {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .title h1 {
+    font-size: 7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
