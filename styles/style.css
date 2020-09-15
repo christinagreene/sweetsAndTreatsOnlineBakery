@@ -293,6 +293,7 @@ header {
   background: url("https://christinagreene.github.io/sweetsAndTreatsOnlineBakery/assets/headerBackground.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 .mainMenuBanner {
@@ -427,11 +428,11 @@ header {
   font-family: "Yeseva One", cursive;
   background: #F4F0E5;
   position: absolute;
-  top: 65px;
-  right: -580px;
+  top: -5100px;
+  right: 0;
   padding: 40px 100px 80px 100px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .cart .cartItemContainer,
@@ -507,7 +508,6 @@ header {
   border: 2px solid #222;
   border-radius: 5px;
   padding: 10px;
-  margin: 0 100px;
   text-transform: uppercase;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -526,7 +526,7 @@ header {
 }
 
 .showCart {
-  right: 0;
+  top: 65px;
 }
 
 .cartInfoOpen {
@@ -754,7 +754,7 @@ footer .copyright p {
             flex-direction: column;
   }
   .contact a {
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
   .contact .contactMenu {
     padding: 10px 30px 40px 30px;
@@ -800,13 +800,13 @@ footer .copyright p {
             transform: translateY(50%);
   }
   .title h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 430px) {
   .cart {
-    padding: 40px 50px 80px 50px;
+    padding: 40px 25px 80px 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

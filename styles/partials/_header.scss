@@ -2,6 +2,7 @@ header {
    background: url('https://christinagreene.github.io/sweetsAndTreatsOnlineBakery/assets/headerBackground.jpg') no-repeat;
    background-size: cover;
    height: 100vh;
+   overflow: hidden;
 }
 
 // Hamburger Menu
@@ -100,15 +101,15 @@ header {
    }
 }
 
-// Shopping Cart Modal
+// Shopping Cart
 .cart {
    font-family: $headingFont;
    background: $white;
    position: absolute;
-   top: 65px;
-   right: -580px;
+   top: -5100px;
+   right: 0;
    padding: 40px 100px 80px 100px;
-   transition: all .3s ease-in-out;
+   transition: all .5s ease-in-out;
    .cartItemContainer,
    .cartTotalContainer {
       @include flexbox(row, nowrap);
@@ -162,7 +163,6 @@ header {
       border: 2px solid $black;
       border-radius: 5px;
       padding: 10px;
-      margin: 0 100px;
       text-transform: uppercase;
       transition: .2s ease-in-out;
       &:hover {
@@ -178,7 +178,7 @@ header {
 }
 
 .showCart {
-   right: 0;
+   top: 65px;
 }
 
 .cartInfoOpen {

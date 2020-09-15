@@ -113,7 +113,7 @@
    .contact {
       flex-direction: column;
       a {
-         padding: 10px 30px;
+         padding: 10px 20px;
       }
       .contactMenu {
          padding: 10px 30px 40px 30px;
@@ -147,7 +147,7 @@
    .title {
       transform: translateY(50%);
       h1 {
-         font-size: 7rem;
+         font-size: 6rem;
       }
    }
 }
@@ -155,6 +155,6 @@
 /////////////////////////////////////////////////////////
 @media (max-width: 430px) {
    .cart {
-      padding: 40px 50px 80px 50px;
+      padding: 40px 25px 80px 25px;
    }
 }
